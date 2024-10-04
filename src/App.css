@@ -1,0 +1,77 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #2a3428;
+}
+
+.App-logo {
+  height: 30vmin;
+  margin: 1vmin;
+  pointer-events: none;
+  justify-content: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-rock infinite alternate 6s linear;
+  }
+}
+
+.App-text {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: left;
+  font-size: 1rem;
+}
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #bada55;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Navigation-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.Button {
+  align-items: center;
+  justify-content: center;
+}
+
+.Button-big {
+  font-weight: bold;
+}
+
+.Button-hover {
+  font-style: oblique;
+}
+
+.Divider {
+  background-color: rgb(155, 39, 24);
+  margin: 1px;
+  height: 20px;
+  width: 100%;
+}
+
+@keyframes App-logo-rock {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}

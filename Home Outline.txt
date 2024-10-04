@@ -1,0 +1,83 @@
+::HOME PAGE::
+Top of Page: ##text div, nesting image with wrap
+  Name (align top center, above profile div. Prominent)
+  Image of Self (random selection from collection?){align left}
+  Profile (paragraph summarizing self){align justify, wrap image}
+Navigation Bar: ##navigation. 2+ Jump To Subject, 2+ Go To Page. (create temp user to showcase login capability?)
+  !! Lock to screen on scroll bellow !!
+  Contact (in page, jump to)
+  Widget (in page, popup)
+  Code Sample (seperate page)
+  Developer Docs (seperate page)
+First Subject: RESUME(resume overview with download link)
+  Module of Collapsible Subcategories
+    Education[+] {highest degree}
+    Work Experience[+] {total # years worked}
+  Build Your Own Cover Letter (Mad_Lib style form letter, processes input into dowloadable cover letter)
+    Form with Submit ##creates downloadable cover letter based on inputs
+  Downloads
+    Download Resume
+    Download Cover Letter ##if DIY isn't done, scroll to form
+Second Subject: CONTACT(contact information with links)
+  Social Media (links in media site style?)
+  Personal Contact Information (webpage style)
+Third Subject+: SHOWOFF(something I found interesting and decided to code into the site)
+
+
+::STYLE::
+# dark but not black, somewhere between deep grey and dark green. Neon effect if possible.
+# headers in #BADA55, likely outlined if neon non-operational
+# text uninteresting and less intrusive, allow emphasized elements to shine
+# each element pulls color scheme from variable location for easy modification
+# each element is plug&play with minimal editing to index page
+# each element is used more than once, single exception for interesting elemenet is permissible
+
+::STRUCTURE:: ##speculative
+<MAIN>
+  <DIV> style="invis"
+    <HEADER> style="header" #name
+    <DIV> style="subcategory"
+      <IMG> #dynamic?
+      <TXT> style="text"
+    </DIV>
+  </DIV>
+
+  <NAV BAR> #lock to screen on scroll past, complex element
+
+  {<DIVider>}
+
+  <DIV> style="invis"
+    <DIV> style="subcategory"
+      {<COLLAPSIBLE> style="header"
+        <ITEM #...>} style="text"
+      {<COLLAPSIBLE> style="header"
+        <ITEM #...>} style="text"
+    </DIV>
+    <DIV>
+      <FORM> style="subcategory"
+    </DIV>
+    <DIV> style="subcategory"
+      {<BUTTON>} style="btn" #download
+      {<BUTTON>} style="btn" #conditional download
+    </DIV>
+  </DIV>
+
+  {<DIVider>}
+
+  <DIV> style="invis"
+    <DIV> style="linkedIn"
+      <TXT> style="linkedInTxt"
+    </DIV>
+    <DIV> style="subcategory"
+      <TXT> style="contactTxt" #style="text"?
+    </DIV>
+  </DIV>
+
+  {<DIVider>}
+
+  <SHOWOFF PIECE>
+
+  {<DIVider>}
+  
+  <minutia> #scroll to top
+</MAIN>
