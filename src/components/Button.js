@@ -1,9 +1,16 @@
 import "../App.css";
+import { Button } from "react-native";
 
-export default function Button(btn = "btn", type = "Button") {
+function Pressed() {
+  console.log("pressed")
+}
+
+export default function Btn(props) {
   return (
-    <div className={type}>
-      <p>[btn]</p>
-    </div>
+    <Button
+      onPress={props.action || Pressed()}
+      title={props.title || " "}
+      color={props.color || "#AAAAAAFF"}
+    />
   )
 }

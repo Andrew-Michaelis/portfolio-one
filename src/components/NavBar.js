@@ -1,12 +1,12 @@
 import '../App.css';
-import Button from './Button';
+import Btn from './Button';
 
 export default function NavigationBar() {
   return (
     <div className="Navigation-bar">
-      <Button btn="header"/>
-      <Button />
-      <Button />
+      <Btn title="header" />
+      <Btn />
+      <Btn color="#BADA55" />
     </div>
   )
 }
